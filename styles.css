@@ -1,0 +1,151 @@
+.body {
+    background-color: #000000;
+}
+
+.mainContainer {
+    border-radius: 15px;
+    overflow: hidden;
+    perspective: 1px;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+}
+
+aside {
+    background-color: #ffd500;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 40%;
+}
+
+.arrow {
+    background-color: #383838;
+    padding: 10px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.face {
+    height: 30%;
+    width: 30%;
+    margin: 25px 0 0 0;
+}
+
+section {
+    background-color: #ffffff;
+    font-size: 12px;
+    height: 100%;
+}
+
+#section2 {
+    background-color: #FF9200;
+    /* height: 458.6px; */
+}
+
+.arrowPage2 {
+    background-color: #383838;
+    padding: 10px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    transform: rotate(180deg);
+    margin-bottom: 50px;
+}
+
+
+.header1 {
+    padding: 0 25px 0 40px;
+}
+
+.myParagraph{
+    padding: 0 25px 0 40px;
+}
+
+form {
+    margin: 5%;
+}
+
+.cbox {
+    height: 25px;
+    width: 25px;
+}
+
+input[type="radio"]:checked ~ .cbox {
+    outline: 2px solid #f00;
+    font-size: 30%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(images/calendar.svg) 0px center no-repeat;
+}
+
+.custom-inpt {
+    padding: 10px;
+}
+
+button {
+    font-size: 14px;
+    border-radius: 20%;
+    text-transform: capitalize;
+}
+
+#Button {
+    width: 140px;
+}
+
+@media screen and (min-width: 1400px){
+}
+
+@media screen and (min-width: 1200px){
+}
+
+@media screen and (min-width: 992px){
+}
+
+@media screen and (max-width: 768px){
+    .mainContainer {
+        flex-direction: column;
+        margin-left: 10%;
+    }
+    aside, section {
+        min-width: 100% !important;
+        /* min-height: 100% !important; */
+    }
+
+    #Button{
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .arrow{
+        margin-bottom: 10px;
+    }
+
+    section {
+        background-color: #000000;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .mainContainer {
+        flex-direction: column;
+        margin-left: 10%;
+    }
+    aside, section {
+        width: 100% !important;
+    }
+
+    form {
+        margin-left: 50px;
+    }
+
+    .arrow{
+        margin-bottom: 10px;
+    }
+
+    section {
+        background-color: #000000;
+    }
+}

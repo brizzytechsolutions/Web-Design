@@ -70,6 +70,7 @@ form {
 .cbox {
     height: 25px;
     width: 25px;
+    visibility: hidden;
 }
 
 input[type="radio"]:checked ~ .cbox {
@@ -111,7 +112,6 @@ button {
     }
     aside, section {
         min-width: 100% !important;
-        /* min-height: 100% !important; */
     }
 
     #Button{
